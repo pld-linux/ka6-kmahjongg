@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.05.2
+%define		kdeappsver	24.08.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kmahjongg
 Summary:	kmahjongg
 Name:		ka6-%{kaname}
-Version:	24.05.2
+Version:	24.08.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	a3f342784fc399087dc55c6927659588
+# Source0-md5:	1620e3cd5ce4d94e3c2c38a40f71e477
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel
@@ -47,9 +47,9 @@ to resemble a certain shape. The player is then expected to remove all
 the tiles off the game board by locating each tile's matching pair.
 
 %description -l pl.UTF-8
-W KMahjonggu kafelki są wymieszane i poukładane jeden na drugim tworząc
-pewien kształt. Zadaniem gracza jest zdjąć wszystkie kafelki z planszy
-znajdując pary.
+W KMahjonggu kafelki są wymieszane i poukładane jeden na drugim
+tworząc pewien kształt. Zadaniem gracza jest zdjąć wszystkie kafelki z
+planszy znajdując pary.
 
 %prep
 %setup -q -n %{kaname}-%{version}
@@ -88,3 +88,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kmahjongg
 %{_datadir}/metainfo/org.kde.kmahjongg.appdata.xml
 %{_datadir}/qlogging-categories6/kmahjongg.categories
+%{_datadir}/qlogging-categories6/kmahjongg.renamecategories
