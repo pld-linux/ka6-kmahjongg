@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.08.0
+%define		kdeappsver	24.08.1
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kmahjongg
 Summary:	kmahjongg
 Name:		ka6-%{kaname}
-Version:	24.08.0
+Version:	24.08.1
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	1620e3cd5ce4d94e3c2c38a40f71e477
+# Source0-md5:	2f6823a75605fc968ef7aaa0a09c4764
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel
